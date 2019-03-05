@@ -1,3 +1,5 @@
+import jenkins.*,jenkins.model.*,hudson.*,hudson.model.*
+   
 jenkins = Hudson.instance
 
 def get_nodes(){
