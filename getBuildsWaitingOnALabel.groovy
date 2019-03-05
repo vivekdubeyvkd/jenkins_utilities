@@ -1,5 +1,7 @@
-import jenkins.*,jenkins.model.*
-import hudson.*,hudson.model.*
+import jenkins.*
+import jenkins.model.*
+import hudson.* 
+import hudson.model.*
 
 Hudson.instance.queue.items.each { 
   if(it.getAssignedLabel().toString() == '<label name>'){
