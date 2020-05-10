@@ -12,7 +12,6 @@ Calendar rightNow = Calendar.getInstance()
 Jenkins.instance.getAllItems(Job.class).findAll { Job job ->
     !job.isBuilding()
 }.collect { Job job ->
-    //find all matching items and return a list but if null then return an empty list
     job.builds.findAll { Run run ->
         job.lastBuild.result == Result.SUCCESS && ((rightNow.getTimeInMillis() - run.getStartTimeInMillis()) <= time_in_millis)
     } ?: []
