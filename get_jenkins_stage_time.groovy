@@ -14,7 +14,7 @@ def get_jenkins_stage_time(build_url, stageName){
             stages = input_json[index]["stages"]
             for(index1 = 0 ; index1 < stages.size() ; index1++){
                 if(stages[index1]["name"] =~ stageName){
-                    println stages[index1]
+                    println("stage execution time : " + stages[prvious_index]["durationMillis"])
                 }
             } 
         }    
