@@ -24,8 +24,8 @@ def createCompressedMessageDigestFromAString(message){
             if(compressedString == "" || compressedString.length() == 1){
                 compressedString = compressedString + messageList[index1]
             }else {
-                lastTwoCharInCompressed = compressedString.substring(compressedString.length() - 2)
-                if(! lastTwoCharInCompressed.contains(messageList[index1])){
+                lastTwoCharInCompressedString = compressedString.substring(compressedString.length() - 2)
+                if(! lastTwoCharInCompressedString.contains(messageList[index1])){
                     compressedString = compressedString + messageList[index1]
                 }    
             }
