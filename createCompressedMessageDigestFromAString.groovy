@@ -1,4 +1,3 @@
-/* Hello World in Groovy */
 /** 
     # This programs counts consecutive occurences of a word in a string and creates a compressed message digest e.g.
     # If input string is aabcdrsss, then output will be a2bcdrs3
