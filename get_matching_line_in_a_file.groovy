@@ -1,6 +1,6 @@
 
 def get_matching_lines_in_file(filePath, pattern){
-    lines = readFile(fileName).readLines()
+    lines = readFile(filePath).readLines()
     result = lines.findAll { it.contains(pattern) }
     if(result[0]){
         return result[0].toString()
